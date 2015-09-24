@@ -24,6 +24,7 @@
 			<th>Họ & Tên</th>
 			<th>Ngày Sinh</th>
 			<th>Điểm Trung Bình</th>
+			<th>Quản Lý</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -33,6 +34,9 @@
 				<td><?php echo $row['fullname']; ?></td>
 				<td><?php echo $row['dob']; ?></td>
 				<td><?php echo $row['gpa']; ?></td>
+				<td>
+					<a href="delete.php?code=<?php echo $row['code']; ?>" class="delete">xóa</a>
+				</td>
 			</tr>
 		<?php endwhile; ?>
 	</tbody>
@@ -42,6 +46,9 @@
 		border-bottom: 2px solid #ccc;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.delete {
+		color: red;
 	}
 </style>
 </body>
