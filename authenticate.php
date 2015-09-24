@@ -10,7 +10,7 @@
 	<p><strong>Mật khẩu:</strong> <?php echo $_POST['password'];?></p>
 	<?php
 		if ($_POST['id'] == 'GV1258' && $_POST['password'] ==  123456) {
-			$adminURL = 'connect_db.php';
+			$adminURL = 'admin.php';
 			header('Location: '.$adminURL);
 			exit();
 		} else {
