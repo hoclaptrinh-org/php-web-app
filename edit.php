@@ -28,7 +28,7 @@
 	// 	echo $row['fullname'];
 ?>
 
-<form action="save.php">
+<form method="POST" action="save.php">
 	<p>
 		<label for="code">MSSV:</label>
 		<input id="code" name="code" type="text" value="<?php echo $row['code'] ;?>">
